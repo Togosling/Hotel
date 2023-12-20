@@ -64,7 +64,7 @@ class BookingViewModel: BookingViewModelType {
     }
     
     func addNewTourist() {
-        tourists.append(Tourist(id: tourists.last?.id ?? 0 + 1))
+        tourists.append(Tourist(id: (tourists.last?.id ?? 0) + 1))
     }
     
     func pop() {
